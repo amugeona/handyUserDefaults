@@ -10,6 +10,10 @@
 		2B0EB2001E4FBF4A0099391B /* handyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0EB1F61E4FBF4A0099391B /* handyUserDefaults.framework */; };
 		2B0EB2051E4FBF4A0099391B /* handyUserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0EB2041E4FBF4A0099391B /* handyUserDefaultsTests.swift */; };
 		2B0EB2071E4FBF4A0099391B /* handyUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B0EB1F91E4FBF4A0099391B /* handyUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B0EB2111E4FBF790099391B /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0EB2101E4FBF790099391B /* Row.swift */; };
+		2B0EB2151E4FC08A0099391B /* Rowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0EB2141E4FC08A0099391B /* Rowable.swift */; };
+		2B8BEF271E4FC23400E22F84 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8BEF261E4FC23400E22F84 /* Message.swift */; };
+		2B8BEF2B1E4FC4DF00E22F84 /* RowableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8BEF2A1E4FC4DF00E22F84 /* RowableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,11 @@
 		2B0EB1FF1E4FBF4A0099391B /* handyUserDefaultsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = handyUserDefaultsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0EB2041E4FBF4A0099391B /* handyUserDefaultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = handyUserDefaultsTests.swift; sourceTree = "<group>"; };
 		2B0EB2061E4FBF4A0099391B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B0EB2101E4FBF790099391B /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		2B0EB2141E4FC08A0099391B /* Rowable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rowable.swift; sourceTree = "<group>"; };
+		2B8BEF261E4FC23400E22F84 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2B8BEF2A1E4FC4DF00E22F84 /* RowableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowableTests.swift; sourceTree = "<group>"; };
+		2B93B7A01E4FF18200185188 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +82,10 @@
 			children = (
 				2B0EB1F91E4FBF4A0099391B /* handyUserDefaults.h */,
 				2B0EB1FA1E4FBF4A0099391B /* Info.plist */,
+				2B0EB2101E4FBF790099391B /* Row.swift */,
+				2B0EB2141E4FC08A0099391B /* Rowable.swift */,
+				2B8BEF261E4FC23400E22F84 /* Message.swift */,
+				2B93B7A01E4FF18200185188 /* MyPlayground.playground */,
 			);
 			path = handyUserDefaults;
 			sourceTree = "<group>";
@@ -82,6 +95,7 @@
 			children = (
 				2B0EB2041E4FBF4A0099391B /* handyUserDefaultsTests.swift */,
 				2B0EB2061E4FBF4A0099391B /* Info.plist */,
+				2B8BEF2A1E4FC4DF00E22F84 /* RowableTests.swift */,
 			);
 			path = handyUserDefaultsTests;
 			sourceTree = "<group>";
@@ -149,6 +163,7 @@
 					2B0EB1F51E4FBF4A0099391B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4533J7KJJ3;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					2B0EB1FE1E4FBF4A0099391B = {
@@ -198,6 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B8BEF271E4FC23400E22F84 /* Message.swift in Sources */,
+				2B0EB2151E4FC08A0099391B /* Rowable.swift in Sources */,
+				2B0EB2111E4FBF790099391B /* Row.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B8BEF2B1E4FC4DF00E22F84 /* RowableTests.swift in Sources */,
 				2B0EB2051E4FBF4A0099391B /* handyUserDefaultsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +341,7 @@
 		2B0EB20B1E4FBF4A0099391B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4533J7KJJ3;
@@ -334,6 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = haruair.handyUserDefaults;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +362,7 @@
 		2B0EB20C1E4FBF4A0099391B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4533J7KJJ3;
@@ -360,6 +382,7 @@
 		2B0EB20E1E4FBF4A0099391B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 4533J7KJJ3;
 				INFOPLIST_FILE = handyUserDefaultsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +395,7 @@
 		2B0EB20F1E4FBF4A0099391B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 4533J7KJJ3;
 				INFOPLIST_FILE = handyUserDefaultsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +424,7 @@
 				2B0EB20C1E4FBF4A0099391B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B0EB20D1E4FBF4A0099391B /* Build configuration list for PBXNativeTarget "handyUserDefaultsTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +433,7 @@
 				2B0EB20F1E4FBF4A0099391B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
